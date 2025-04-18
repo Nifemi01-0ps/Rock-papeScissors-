@@ -48,3 +48,13 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
+// check for winner 
+function checkforWinner() {
+    if (humanScore >= 5) {
+        winner.innerHTML = "🏆 Congratulations! You won the game!";
+        gameOver = true;
+    } else if (computerScore >= 5) {
+        winner.innerHTML = "💻 The computer won the game. Better luck next time!";
+        gameOver = "true";
+    }
+}
